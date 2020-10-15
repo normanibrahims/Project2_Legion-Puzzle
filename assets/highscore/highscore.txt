@@ -1,0 +1,15 @@
+hisyam | 0 | 1 | 0
+Fadhil | 0 | 2 | 1
+Ridwan | 0 | 3 | 11
+Aqil | 0 | 3 | 12
+Annisa | 0 | 4 | 23
+koko | 0 | 0 | 7
+hisyam | 0 | 1 | 0
+Fadhil | 0 | 2 | 1
+Ridwan | 0 | 3 | 11
+Aqil | 0 | 3 | 12
+hisyam | 0 | 1 | 0
+Fadhil | 0 | 2 | 1
+Ridwan | 0 | 3 | 11
+Aqil | 0 | 3 | 12
+Annisa | 0 | 4 | 23

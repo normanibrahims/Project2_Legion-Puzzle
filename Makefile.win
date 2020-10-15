@@ -1,0 +1,55 @@
+# Project: Project1
+# Makefile created by Dev-C++ 5.9.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Annisa037.o Bagas039.o Hisyam049.o linked.o Lisna047.o nbtree_d.o Norman055.o Queue.o stack.o main.o
+LINKOBJ  = Annisa037.o Bagas039.o Hisyam049.o linked.o Lisna047.o nbtree_d.o Norman055.o Queue.o stack.o main.o
+LIBS     = -L"C:/Program Files (x86)/Mingw/lib";"C:/Program Files (x86)/Mingw/mingw32/lib" -static-libgcc-L.-lbgi-lgdi32-lcomdlg32-luuid-loleaut32-lole32-lwinmm -L. -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32 -lwinmm
+INCS     = -I"C:/Program Files (x86)/Mingw/include";"C:/Program Files (x86)/Mingw/lib/gcc/mingw32/3.4.5/include"
+CXXINCS  = -I"C:/Program Files (x86)/Mingw/include";"C:/Program Files (x86)/Mingw/lib/gcc/mingw32/3.4.5/include"
+BIN      = Project1.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Annisa037.o: Annisa037.cpp
+	$(CPP) -c Annisa037.cpp -o Annisa037.o $(CXXFLAGS)
+
+Bagas039.o: Bagas039.cpp
+	$(CPP) -c Bagas039.cpp -o Bagas039.o $(CXXFLAGS)
+
+Hisyam049.o: Hisyam049.cpp
+	$(CPP) -c Hisyam049.cpp -o Hisyam049.o $(CXXFLAGS)
+
+linked.o: linked.cpp
+	$(CPP) -c linked.cpp -o linked.o $(CXXFLAGS)
+
+Lisna047.o: Lisna047.cpp
+	$(CPP) -c Lisna047.cpp -o Lisna047.o $(CXXFLAGS)
+
+nbtree_d.o: nbtree_d.cpp
+	$(CPP) -c nbtree_d.cpp -o nbtree_d.o $(CXXFLAGS)
+
+Norman055.o: Norman055.cpp
+	$(CPP) -c Norman055.cpp -o Norman055.o $(CXXFLAGS)
+
+Queue.o: Queue.cpp
+	$(CPP) -c Queue.cpp -o Queue.o $(CXXFLAGS)
+
+stack.o: stack.cpp
+	$(CPP) -c stack.cpp -o stack.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
